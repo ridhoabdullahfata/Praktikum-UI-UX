@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Input</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 1rem; }
+        table { border-collapse: collapse; max-width:700px; width:100%; }
+        td { padding:0.5rem; vertical-align:middle; }
+        th { text-align:left; padding:0.5rem 0; }
+        .note { font-style: italic; color: #2e2e2e; margin:0; }
+        .actions { margin-top:1rem; }
+        .upload-box {
+            display:inline-block;
+            width:240px;
+            height:120px;
+            border:2px dashed #bbb;
+            border-radius:6px;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            text-align:center;
+            color:#666;
+            cursor:pointer;
+            padding:0.5rem;
+        }
+        .upload-box small { display:block; color:#999; margin-top:6px; }
+        input[type="file"] { display:none; }
+        .radio-list { list-style:none; margin:0; padding:0; display:flex; gap:1rem; }
+    </style>
+</head>
+<body>
+    <h1>Welcome To | Ridho Shop</h1>
+    <p>Anda bisa membeli barang yang ada di toko Ridho Shop disini</p>
+    <form action="formweb2.html" method="get">
+        <table border ="0">
+            <thead>
+                <tr>
+                    <th colspan="2">Silahkan isi deskripsi barang yang ingin anda beli</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><label for="name">Judul barang:</label></td>
+                    <td><input type="text" name="name" id="name"></td>
+                </tr>
+                <tr>
+                    <td><label for="deskripsi">Deskripsi:</label></td>
+                    <td><textarea name="deskripsi" id="deskripsi"></textarea></td>
+                </tr>
+                <tr>
+                    <td><label for="rekening">Nomer Rekening:</label></td>
+                    <td><input type="text" name="rekening" id="rekening"></td>
+                </tr>
+                <tr>
+  <td><label for="bank">Bank:</label></td>
+  <td>
+    <select name="bank" id="bank">
+      <option value="">-- Pilih Bank --</option>
+      <option value="BCA">Bank Central Asia (BCA)</option>
+      <option value="Mandiri">Bank Mandiri</option>
+      <option value="BNI">Bank Negara Indonesia (BNI)</option>
+      <option value="BRI">Bank Rakyat Indonesia (BRI)</option>
+      <option value="CIMB">CIMB Niaga</option>
+    </select>
+  </td>
+</tr>
+    <tr>
+                    <td><label for="pemilik_akun">Pemilik Akun:</label></td>
+                    <td><input type="text" name="pemilik_akun" id="pemilik_akun"></td>
+                </tr>
+                <tr>
+                    <td><label for="jumlah_transaksi">Jumlah Transaksi:</label></td>
+                    <td><input type="number" name="jumlah_transaksi" id="jumlah_transaksi" min="1"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><p style="font-style:italic; color:#2e2e2e; margin:0;">*Jika transaksi untuk 3 orang, pilih 3 dari daftar drop-down</p></td>
+                </tr>
+                <tr>
+                    <td><label>Metode Pengiriman:</label></td>
+                    <td>
+                        <ul class="radio-list">
+                            <li>
+                                <input type="radio" name="metode_kirim" id="kirim_ponsel_radio" value="ponsel">
+                                <label for="kirim_ponsel_radio">Kirim ke Ponsel</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="metode_kirim" id="kirim_email_radio" value="email">
+                                <label for="kirim_email_radio">Kirim ke Email</label>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                                    <tr>
+                                        <td><label for="telepon">Kirim ke Ponsel (No):</label></td>
+                                        <td><input type="tel" name="telepon" id="telepon" placeholder="+62"></td>
+                                </tr>
+                                 <tr>
+                                        <td><label for="email">Kirim ke Email:</label></td>
+                                        <td><input type="email" name="email" id="email" placeholder="name@gmail.com"></td>
+                                </tr>
+                <tr>
+                    <td><label for="photo">Upload Foto:</label></td>
+                    <td>
+                        <label for="photo" class="upload-box">
+                            Klik untuk memilih foto
+                            <small>JPG/PNG, maksimal 5MB</small>
+                        </label>
+                        <input type="file" name="photo" id="photo" accept="image/*">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div style="margin-top:1rem;">
+            <button type="submit">Buat Link</button>
+            <button type="reset">Reset</button>
+        </div>
+
+    </form>
+</body>
+</html>
