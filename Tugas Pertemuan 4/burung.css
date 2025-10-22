@@ -1,0 +1,97 @@
+body {
+    background: linear-gradient(135deg, 
+        #95c0ff,  
+        #80b9ff,  
+        #7795ff,  
+        #6aa3ff  
+    );
+    background-attachment: fixed; 
+    font-family: poppins, sans-serif;
+    min-height: 100vh; 
+}
+
+h1 {
+    text-align: center;
+    color: rgb(0, 89, 255);
+    font-style: italic;
+    
+}
+
+blockquote {
+    background-color: #2c76ef;
+    font-size: 20px;
+    text-align: center;
+    font-style: italic;
+    color: rgb(255, 255, 255);
+    margin-right: 20px;
+    margin-left: 20px;
+    padding: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;         
+  justify-content: center;
+  gap: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+
+.gambar, .koleksi {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+img {
+  max-width: 300px; 
+  width: auto;
+  height: 200px; 
+  border-radius: 20px;
+  border: 5px solid #006ef5;
+}
+
+p {
+  border: 3px dashed #147ec56e;
+  padding: 15px;
+  border-radius: 10px;       
+  background-color: #0088ff75;  
+}
+
+#profil {
+  border-top: 3px solid #006ef5;
+  border-bottom: 3px solid #006ef5;
+  padding: 10px;
+}
+
+#beternak {
+  border: 3px solid #006ef5;
+  border-radius: 15px;
+  padding: 15px;
+  margin: 20px;
+  background-color: #0471de38;
+}
+
+.promo {
+  border: 3px solid #006ef5;  
+  border-radius: 15px; 
+  padding: 10px 15px;        
+  margin: 15px 0;        
+  background-color: #0040e332;   
+  text-align: center;          
+}
+.hargadiskon {
+    color: #930505;
+}
+#Wa {
+    color: rgb(0, 255, 26);
+}
+.promo, h2 {
+    color: rgb(15, 0, 100);
+}
+
