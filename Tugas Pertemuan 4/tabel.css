@@ -1,0 +1,39 @@
+table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+th {
+    background-color: #4A78B3; /* biru seperti contoh */
+    color: white;
+    padding: 10px;
+}
+
+td {
+    padding: 10px;
+    border: 1px solid #6796d0;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(odd) {
+    background-color: #6796d0;
+}
+
+th:first-child, td:first-child {
+    font-weight: bold;
+}
+
+.hargaalpukat{
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+}
+.hargaalpukat :hover {
+      text-decoration: underline;
+}
