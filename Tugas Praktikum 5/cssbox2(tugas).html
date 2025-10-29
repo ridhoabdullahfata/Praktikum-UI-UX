@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas cssbox2</title>
+    <style>
+        .container {
+            margin: 0 auto;
+            padding: 20px;
+            width: 80%;
+        }
+        .hijau {
+            background-color: rgb(0, 255, 153);
+            height: 100px;
+            margin-bottom: 20px;
+        }
+        .content {
+            display: flex;
+            gap: 20px;
+        }
+        .kiri {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .biru {
+            background-color: rgb(0, 128, 255);
+            height: 100px;
+            width: 150px;
+        }
+        .kanan {
+            display: flex;
+          flex-direction: column;
+          gap: 20px;
+
+        }
+        .pink{
+            background-color: rgb(255, 0, 115);
+             height: 100px;
+            width: 580px;
+        }
+        .merah {
+            background-color: rgb(255, 0, 0);
+             height: 100px;
+            width: 580px;
+        }
+        
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="box hijau"></div>
+
+    <div class="content">
+        <div class="kiri">
+            <div class="box biru"></div>
+            <div class="box biru"></div>
+        </div>
+        <div class="kanan">
+            <div class="pink"></div>
+            <div class="merah"></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
