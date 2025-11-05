@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+}
+
+img {
+    width: 5%;
+}
+
+nav {
+    background-color: #00c3af;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+nav ul {
+    display: flex;
+   list-style-type: none;
+   align-items: center;
+}
+
+nav li {
+    margin: 0 15px;
+    color: rgb(255, 255, 255);
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+}
+
+nav li{
+    padding: 10px;
+}
