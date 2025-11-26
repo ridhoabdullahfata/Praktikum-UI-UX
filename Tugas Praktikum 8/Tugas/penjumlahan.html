@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penjumlahan Dua Bilangan</title>
+</head>
+<body>
+    <h2>Menjumlahkan Dua Bilangan</h2>
+
+    <input type="number" id="bil1" onchange="hitung()">
+    <br><br>
+
+    <span>+</span>
+    <br><br>
+
+    <input type="number" id="bil2" onchange="hitung()">
+    <br><br>
+
+    <span>=</span>
+    <br><br>
+
+    <input type="number" id="hasil" readonly>
+    <br>
+
+    <script>
+        function hitung() {
+            let a = Number(document.getElementById("bil1").value);
+            let b = Number(document.getElementById("bil2").value);
+
+            document.getElementById("hasil").value = a + b;
+        }
+    </script>
+
+</body>
+</html>
