@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Picker Mobil</title>
+</head>
+<body>
+
+    <h2>Pilih Mobil</h2>
+
+    <select id="mobilSelect" onchange="tampilkanGambar()">
+        <option value="">-- Pilih Mobil --</option>
+        <option value="porsche.jpg">Porsche</option>
+        <option value="Honda Civic Turbo.jpg">Honda Civic Turbo</option>
+        <option value="Toyota GR Yaris.jpg">Toyota GR Yaris</option>
+        <option value="Mazda 3 Hatchback.jpg">Mazda 3 Hatchback </option>
+        <option value="Toyota 86.jpg">Toyota 86</option>
+        <option value="Honda Brio RS.jpg">Honda Brio RS</option>
+    </select>
+
+    <br><br>
+
+    <img id="preview" src="" width="350" style="display:none; border:1px solid #ddd; padding:5px;">
+
+    <script>
+        function tampilkanGambar() {
+            let pilihan = document.getElementById("mobilSelect").value;
+            let img = document.getElementById("preview");
+
+            if (pilihan !== "") {
+                img.src = pilihan;
+                img.style.display = "block";
+
+                alert("Ini gambar " + pilihan);
+            } else {
+                img.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>

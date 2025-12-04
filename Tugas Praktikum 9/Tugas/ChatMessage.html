@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chatbox Sederhana</title>
+
+<style>
+    #chatbox {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 300px;
+        height: 380px;
+        border: 1px solid #aaa;
+        background: white;
+        display: flex;
+        flex-direction: column;
+        font-family: Arial;
+    }
+
+    #chatArea {
+        flex: 1;
+        padding: 5px;
+        overflow-y: auto;
+        border-bottom: 1px solid #ccc;
+        white-space: pre-wrap;
+        font-size: 14px;
+    }
+
+    #inputArea {
+        display: flex;
+        border-top: 1px solid #ccc;
+    }
+
+    #message {
+        flex: 1;
+        padding: 8px;
+        font-size: 14px;
+        border: none;
+        outline: none;
+    }
+
+    #sendBtn {
+        width: 70px;
+        background: #007bff;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+
+    #sendBtn:hover {
+        background: #005fcc;
+    }
+</style>
+</head>
+<body>
+
+<h1>Selamat Datang</h1>
+<p>Scroll halaman ini, chatbox tetap berada di pojok kanan bawah.</p>
+<p>ini adalah chatbox sederhana yang dibuat oleh Ridho Abdullah Fata</p>
+
+<div id="chatbox">
+    <div id="chatArea"></div>
+
+    <div id="inputArea">
+        <input type="text" id="message" placeholder="Ketik pesan...">
+        <button id="sendBtn" onclick="kirim()">Kirim</button>
+    </div>
+</div>
+
+<script>
+    function kirim() {
+        let msg = document.getElementById("message").value;
+        let area = document.getElementById("chatArea");
+
+        if (msg.trim() === "") return;
+
+        area.innerHTML += msg + "\n";
+
+        area.scrollTop = area.scrollHeight;
+
+        document.getElementById("message").value = "";
+    }
+
+    document.getElementById("message").addEventListener("keyup", function(event) {
+        if (event.key === "Enter") {
+            kirim();
+        }
+    });
+</script>
+
+</body>
+</html>
