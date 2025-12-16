@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Registrasi Seminar Cyber Security</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      min-height: 100vh;
+    }
+    h3 {
+      color: #ffffff;
+    }
+    .card {
+      border-radius: 12px;
+    }
+    .card-header {
+      background: linear-gradient(135deg, #b31217, #e52d27);
+      color: #fff;
+      font-weight: 600;
+    }
+    .btn-cyber {
+      background-color: #e52d27;
+      color: #fff;
+      border: none;
+    }
+    .btn-cyber:hover {
+      background-color: #b31217;
+      color: #fff;
+    }
+    label {
+      font-weight: 500;
+    }
+  </style>
+</head>
+  <style>
+    body {
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      min-height: 100vh;
+    }
+    h3 {
+      color: #ffffff;
+    }
+    .card {
+      border-radius: 12px;
+    }
+    .card-header {
+      font-weight: 600;
+    }
+    .header-cyber {
+      background: linear-gradient(135deg, #b31217, #e52d27);
+      color: #fff;
+    }
+    .header-data {
+      background: linear-gradient(135deg, #141e30, #243b55);
+      color: #fff;
+    }
+    .btn-cyber {
+      background-color: #e52d27;
+      color: #fff;
+      border: none;
+    }
+    .btn-cyber:hover {
+      background-color: #b31217;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container my-5">
+  <h3 class="text-center mb-4">Admin - Seminar</h3>
+
+  <!-- CREATE SEMINAR -->
+  <div class="card mb-4 shadow">
+    <div class="card-header header-cyber">Create New Seminar</div>
+    <div class="card-body">
+      <form>
+        <div class="row mb-3">
+          <div class="col-md-4">
+            <label class="form-label">Kode</label>
+            <input type="text" class="form-control">
+          </div>
+          <div class="col-md-8">
+            <label class="form-label">Nama Kegiatan</label>
+            <input type="text" class="form-control">
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <div class="col-md-6">
+            <label class="form-label">Tanggal Mulai</label>
+            <input type="date" class="form-control">
+          </div>
+          <div class="col-md-6">
+            <label class="form-label">Tanggal Akhir</label>
+            <input type="date" class="form-control">
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <div class="col-md-6">
+            <label class="form-label">Biaya</label>
+            <input type="number" class="form-control">
+          </div>
+          <div class="col-md-6">
+            <label class="form-label">Tempat</label>
+            <input type="text" class="form-control">
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Deskripsi</label>
+          <textarea class="form-control"></textarea>
+        </div>
+
+        <button class="btn btn-cyber">Simpan</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- DATA PESERTA -->
+  <div class="card shadow">
+    <div class="card-header header-data">Data Peserta Seminar</div>
+    <div class="card-body table-responsive">
+      <input type="text" class="form-control mb-3" placeholder="Search">
+      <table class="table table-bordered">
+        <thead class="table-secondary">
+          <tr>
+            <th>No</th>
+            <th>Nama</th>
+            <th>Email</th>
+            <th>Status</th>
+            <th>Aksi</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Budi</td>
+            <td>budi@email.com</td>
+            <td>Mahasiswa</td>
+            <td>
+              <button class="btn btn-sm btn-info">View</button>
+              <button class="btn btn-sm btn-warning">Edit</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
